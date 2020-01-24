@@ -8,6 +8,10 @@ const convert = (number) => {
       return ret
     }
     while (number > 0) {
+      if (number === 418) {
+        number = 0
+        return 'IMATEAPOT'
+      }
       if (number >= 1000) {
         ret = ret + 'M'
         number = number - 1000
